@@ -156,7 +156,7 @@ export default function Projects() {
                       <Github className="w-4 h-4" />
                       Source
                     </a>
-                    {project.url && (
+                    {project.url ? (
                       <a
                         href={project.url}
                         target="_blank"
@@ -166,7 +166,7 @@ export default function Projects() {
                         <ExternalLink className="w-4 h-4" />
                         Live Demo
                       </a>
-                    )}
+                    ) : null}
                   </div>
                 </div>
               </motion.div>
