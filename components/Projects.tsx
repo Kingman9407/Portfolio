@@ -17,7 +17,7 @@ const projects = [
     description: "Browser-based AI video editor with on-device inference, zero cloud dependency, and enhanced privacy. Made possible by the fine-tuned Hornet model.",
     url: "https://aieditmk1.vercel.app",
     repo: "https://github.com/Kingman9407/AI-edit-edge",
-    tags: ["Next.js", "TypeScript", "AI Agent", "ONNX Runtime"],
+    tags: ["Next.js", "TypeScript", "AI Agent", "Agentic AI", "ONNX Runtime"],
     image: AIEditImg
   },
   {

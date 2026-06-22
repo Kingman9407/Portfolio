@@ -7,7 +7,7 @@ const skillCategories = [
     title: "AI & Machine Learning",
     items: [
       "Machine Learning", "Edge AI", "On-Device AI",
-      "AI Benchmarking", "Model Fine-Tuning", 
+      "Agentic AI", "AI Benchmarking", "Model Fine-Tuning", 
       "Prompt Engineering", "Transformer Models", "PyTorch", 
       "NumPy", "Pandas", "ONNX Runtime", "Hugging Face Transformers"
     ]
