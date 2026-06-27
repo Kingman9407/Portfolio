@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { Github } from "./icons/Github";
-
 import AIEditImg from "./imgs/AIedit.png";
 import LightEdgeAiImg from "./imgs/lightedgeai.png";
 import HornetImg from "./imgs/hornet.png";
@@ -76,7 +75,7 @@ export default function Projects() {
               <h2 className="text-3xl md:text-5xl font-bold mb-4">Featured Projects</h2>
               <div className="w-20 h-1 bg-blue-500 rounded-full mb-6"></div>
               <p className="text-gray-400 text-lg max-w-4xl leading-relaxed">
-                A showcase of my recent work centered around Edge AI and performant web applications. 
+                A showcase of my recent work centered around Edge AI and performant web applications.
                 My overarching aim is to leverage small, highly focused machine learning models that run directly on-device. This approach allows me to deliver powerful, specialized functionality while keeping user privacy and cost-efficiency as the main focus.
               </p>
             </div>
@@ -84,7 +83,7 @@ export default function Projects() {
         </motion.div>
 
         <div className="relative w-full group/carousel">
-          <button 
+          <button
             onClick={scrollLeft}
             className="absolute left-0 top-[40%] -translate-y-1/2 -translate-x-5 lg:-translate-x-8 z-20 p-3 rounded-full bg-black/60 hover:bg-black/90 border border-white/20 backdrop-blur-md transition-all text-white opacity-0 group-hover/carousel:opacity-100 hidden md:flex hover:scale-110 shadow-xl"
             aria-label="Scroll left"
@@ -92,7 +91,7 @@ export default function Projects() {
             <ChevronLeft className="w-6 h-6" />
           </button>
 
-          <button 
+          <button
             onClick={scrollRight}
             className="absolute right-0 top-[40%] -translate-y-1/2 translate-x-5 lg:translate-x-8 z-20 p-3 rounded-full bg-black/60 hover:bg-black/90 border border-white/20 backdrop-blur-md transition-all text-white opacity-0 group-hover/carousel:opacity-100 hidden md:flex hover:scale-110 shadow-xl"
             aria-label="Scroll right"
@@ -100,7 +99,7 @@ export default function Projects() {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          <div 
+          <div
             ref={scrollRef}
             className="flex flex-col md:flex-row md:overflow-x-auto scroll-smooth md:snap-x md:snap-mandatory gap-8 md:gap-6 md:pb-8 md:-mx-6 md:px-6 lg:mx-0 lg:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
@@ -137,7 +136,7 @@ export default function Projects() {
                   <p className="text-gray-400 text-sm lg:text-base leading-relaxed mb-6 flex-grow">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tags.map((tag) => (
                       <span key={tag} className="px-3 py-1.5 text-xs lg:text-sm rounded-full bg-white/10 text-gray-300 font-medium">

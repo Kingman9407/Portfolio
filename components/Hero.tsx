@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, ArrowRight } from "lucide-react";
+import { Mail, ArrowRight, FileText } from "lucide-react";
 import { Github } from "./icons/Github";
 import { Linkedin } from "./icons/Linkedin";
 
@@ -42,13 +42,21 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 pt-4">
             <a
               href="#projects"
               className="px-8 py-4 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors flex items-center gap-2 group"
             >
               View My Work
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href="/resume.pdf"
+              download="Aseem_Ahamed_Resume.pdf"
+              className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 hover:from-blue-500/20 hover:to-purple-500/20 border border-purple-500/30 backdrop-blur-sm text-white font-semibold transition-colors flex items-center gap-2"
+            >
+              <FileText className="w-5 h-5 text-purple-400" />
+              Resume
             </a>
             <a
               href="https://github.com/Kingman9407"
